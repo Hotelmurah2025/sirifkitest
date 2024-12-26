@@ -69,6 +69,29 @@ Tabel: products
 - price (decimal)
 - description (text)
 
+## Deployment Instructions
+
+### Environment Setup
+1. Copy `.env.example` to `.env`
+2. Update `.env` dengan pengaturan production:
+   - Set BASE_URL sesuai domain Anda
+   - Konfigurasi kredensial database
+   - Set ENCRYPTION_KEY (32 karakter)
+   - Set ENVIRONMENT ke 'production'
+
+### Server Requirements
+- PHP 7.3 or higher
+- MySQL 5.7 or higher
+- mod_rewrite enabled (Apache)
+- OpenSSL PHP Extension
+- PDO PHP Extension
+- Mbstring PHP Extension
+
+### Production Configuration
+Aplikasi ini menyertakan konfigurasi khusus production di:
+- `application/config/production/config.php`
+- `application/config/production/database.php`
+
 ## Troubleshooting
 
 1. Jika muncul error "Database connection failed":
